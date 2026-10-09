@@ -1,0 +1,184 @@
+{
+  "v": 3,
+  "assetGroups": {
+    "Icons": {
+      "files": {
+        "Arquitectura.png": {
+          "blob": "1e45e807e89ab6efe5d65e0a90e8ac69",
+          "name": "Arquitectura.png",
+          "size": 4454,
+          "type": "image/png"
+        },
+        "Construccion.png": {
+          "blob": "192b03214ec01118f0161f4009341e97",
+          "name": "Construccion.png",
+          "size": 1942,
+          "type": "image/png"
+        },
+        "Remodelacion.png": {
+          "blob": "4ac3b67a0c856e24e8e888cb3ea4c1af",
+          "name": "Remodelacion.png",
+          "size": 3514,
+          "type": "image/png"
+        }
+      },
+      "name": "Icons",
+      "order": [
+        "Arquitectura.png",
+        "Construccion.png",
+        "Remodelacion.png"
+      ],
+      "tile": "s"
+    },
+    "Logos": {
+      "files": {
+        "Ackro_Ico.png": {
+          "blob": "d652593af1dadc963efbb648126ddd22",
+          "name": "Ackro_Ico.png",
+          "size": 6417,
+          "type": "image/png"
+        },
+        "Ackro_Logo.png": {
+          "blob": "2d9e9560db79a0b7bed83cfe5cf2d708",
+          "name": "Ackro_Logo.png",
+          "size": 19912,
+          "type": "image/png"
+        },
+        "Ackro_Logo_NB.png": {
+          "blob": "1661c73fdd3dfd214e95e7a807c615e6",
+          "name": "Ackro_Logo_NB.png",
+          "size": 18158,
+          "type": "image/png"
+        },
+        "LogoFondoNegro.png": {
+          "blob": "952c388ff67b4adaa71c3606c2c4ddf0",
+          "name": "LogoFondoNegro.png",
+          "size": 4886,
+          "type": "image/png"
+        }
+      },
+      "name": "Logos",
+      "order": [
+        "Ackro_Logo.png",
+        "Ackro_Logo_NB.png",
+        "Ackro_Ico.png",
+        "LogoFondoNegro.png"
+      ],
+      "tile": "l"
+    },
+    "Pattern": {
+      "files": {
+        "Cenefa2.png": {
+          "blob": "15a6d1eaeff0e4955f752531bc02e422",
+          "name": "Cenefa2.png",
+          "size": 77846,
+          "type": "image/png"
+        }
+      },
+      "name": "Pattern",
+      "order": [
+        "Cenefa2.png"
+      ],
+      "tile": "l"
+    },
+    "Photography": {
+      "files": {
+        "Ackro_Home01.webp": {
+          "blob": "0352c17d690c19d65bdc6aad2e7aff60",
+          "name": "Ackro_Home01.webp",
+          "size": 64998,
+          "type": "image/webp"
+        },
+        "Ackro_Home02.webp": {
+          "blob": "2f02de1f0907ed1054e01385ff65a420",
+          "name": "Ackro_Home02.webp",
+          "size": 69178,
+          "type": "image/webp"
+        },
+        "Ackro_Home03.webp": {
+          "blob": "92a1a5741552d3fb83e88af6dd2b2eaf",
+          "name": "Ackro_Home03.webp",
+          "size": 82174,
+          "type": "image/webp"
+        },
+        "Ackro_Home04.webp": {
+          "blob": "5a3a08f41ee20f0abe4de9a28351fa90",
+          "name": "Ackro_Home04.webp",
+          "size": 99500,
+          "type": "image/webp"
+        },
+        "Portada_Diseno-1.webp": {
+          "blob": "0a24ca9642175980c67bd3be1a63d2f5",
+          "name": "Portada_Diseno-1.webp",
+          "size": 75380,
+          "type": "image/webp"
+        },
+        "Carlos.webp": {
+          "name": "Carlos.webp",
+          "blob": "2eb02bfa296aa4b14e571ad1c120277f",
+          "size": 20396,
+          "type": "image/webp"
+        },
+        "Sofia.webp": {
+          "name": "Sofia.webp",
+          "blob": "b7512dca2a707b27c39d345a20f3d410",
+          "size": 24226,
+          "type": "image/webp"
+        }
+      },
+      "name": "Photography",
+      "order": [
+        "Portada_Diseno-1.webp",
+        "Ackro_Home01.webp",
+        "Ackro_Home02.webp",
+        "Ackro_Home03.webp",
+        "Ackro_Home04.webp",
+        "Carlos.webp",
+        "Sofia.webp"
+      ],
+      "tile": "m"
+    },
+    "Reference": {
+      "files": {
+        "ig-grid.jpg": {
+          "blob": "c767143e47c7f3b274fad5f1151d0c46",
+          "name": "ig-grid.jpg",
+          "size": 88582,
+          "type": "image/jpeg"
+        }
+      },
+      "name": "Reference",
+      "order": [
+        "ig-grid.jpg"
+      ],
+      "tile": "l"
+    }
+  },
+  "blobs": {},
+  "createdOnFiles": {
+    "at": "2026-10-09T15:22:12Z",
+    "v": 1
+  },
+  "docs": {
+    "readme": "project/README.md",
+    "sections": []
+  },
+  "groups": [
+    "Logos",
+    "Pattern",
+    "Icons",
+    "Photography",
+    "Reference"
+  ],
+  "lastChange": {
+    "by": "Hiram A. López",
+    "at": "2026-10-09T15:26:12Z",
+    "via": "Claude Code",
+    "note": "Portada con la geometría real de la K; fotos reales en testimonios; FAQ sobre crema"
+  },
+  "layout": "files",
+  "libraries": [],
+  "namespace": "AckroHabita",
+  "sections": {},
+  "title": "Ackro Habita"
+}

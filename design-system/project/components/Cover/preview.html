@@ -1,0 +1,51 @@
+<!-- @dsCard height=320 -->
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Ackro Habita</title>
+<style>
+  html, body { margin:0; height:100%; }
+  body { background:var(--surface); color:var(--ink); font-family:var(--font-sans); overflow:hidden; }
+  .cover { position:relative; height:320px; overflow:hidden; }
+  .art { position:absolute; top:0; left:480px; width:480px; height:320px; overflow:hidden; }
+  .art svg { display:block; width:480px; height:320px; }
+  .accent { fill:var(--accent); }
+  .deep { fill:var(--ink); }
+  .sand { fill:var(--sand); }
+  .cream { fill:var(--cream); }
+  .k { fill:var(--pattern-orange); }
+  .words { position:absolute; left:40px; bottom:36px; max-width:440px; }
+  .name { margin:0; font-family:var(--font-display); font-size:104px; line-height:.95; font-weight:700; letter-spacing:-.02em; color:var(--ink-heading); }
+  .tag { margin:14px 0 0 4px; font-size:14px; line-height:20px; color:var(--text); }
+</style>
+</head>
+<body>
+<div class="cover">
+<div class="art" aria-hidden="true">
+<svg viewBox="0 0 480 320" width="480" height="320">
+<!--
+  blocks      accent 176×232 bled off the top · ink 272×264 bled off right and bottom · sand 176×72 tint below the accent slab · ≈40% of 960×320; corners radius-none (the site's cards are square)
+  arrangement one tall orange slab with the dark block stepping down beside it, like the K's stem and arms
+  pattern     the K mark itself, measured from Ackro_Ico: a stem with its top-right corner rounded to its own width and two radius-32 quarter discs (square corners top-left and bottom-left), five units in pattern-orange in the ink block, as the brand's cenefa repeats it
+  scales      gutter block-gap (24px), pitch 80 across and 100 down, quarter-disc radius 32, stems 22 wide, 6px cuts
+-->
+<rect class="accent" x="0" y="-8" width="176" height="232"/>
+<rect class="sand" x="0" y="248" width="176" height="72"/>
+<rect class="deep" x="200" y="56" width="280" height="264"/>
+<g class="k">
+  <path d="M228 166 V96 A22 22 0 0 1 250 118 V166 Z"/><path d="M256 96 H288 A32 32 0 0 1 256 128 Z"/><path d="M256 166 V134 A32 32 0 0 1 288 166 Z"/>
+  <path d="M308 166 V96 A22 22 0 0 1 330 118 V166 Z"/><path d="M336 96 H368 A32 32 0 0 1 336 128 Z"/><path d="M336 166 V134 A32 32 0 0 1 368 166 Z"/>
+  <path d="M388 166 V96 A22 22 0 0 1 410 118 V166 Z"/><path d="M416 96 H448 A32 32 0 0 1 416 128 Z"/><path d="M416 166 V134 A32 32 0 0 1 448 166 Z"/>
+  <path d="M228 266 V196 A22 22 0 0 1 250 218 V266 Z"/><path d="M256 196 H288 A32 32 0 0 1 256 228 Z"/><path d="M256 266 V234 A32 32 0 0 1 288 266 Z"/>
+  <path d="M308 266 V196 A22 22 0 0 1 330 218 V266 Z"/><path d="M336 196 H368 A32 32 0 0 1 336 228 Z"/><path d="M336 266 V234 A32 32 0 0 1 368 266 Z"/>
+</g>
+</svg>
+</div>
+<div class="words">
+<h1 class="name">Ackro<br>Habita</h1>
+<p class="tag">Arquitectura • Construcción • Diseño</p>
+</div>
+</div>
+</body>
+</html>

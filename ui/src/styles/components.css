@@ -1,0 +1,115 @@
+/* Componentes de Ackro Habita.
+   Valores medidos en construccionesackro.com a 1440px (2026-10-09).
+   Decisiones de marca: 1A (único naranja de interfaz: accent), 2A (botón con texto: accent-strong),
+   3A (en el ERP el fondo de trabajo es surface; cream sólo en marketing). */
+
+.ak-icon { display: inline-block; flex: none; vertical-align: middle; }
+
+/* Button — CTA 21px 41px, radio 31px; outline 16px 31px, radio 26px; flecha 12px a 8px del texto */
+.ak-btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+  font-family: var(--font-sans); font-size: 14px; line-height: 1.1; font-weight: 700; text-transform: uppercase;
+  text-decoration: none; white-space: nowrap; cursor: pointer;
+  border: 1px solid transparent; border-radius: var(--radius-pill);
+  padding: var(--pad-btn-y) var(--pad-btn-x);
+}
+.ak-btn--primary { background: var(--accent-strong); border-color: var(--accent-strong); color: var(--surface); }
+.ak-btn--outline {
+  background: var(--surface); border-color: var(--ink); color: var(--ink);
+  border-radius: var(--radius-pill-sm); padding: var(--pad-btn-sm-y) var(--pad-btn-sm-x);
+}
+.ak-btn:disabled, .ak-btn[aria-disabled="true"] { opacity: 0.5; cursor: not-allowed; }
+
+/* ArrowButton — círculo de 48px (el sitio mide 49×51 por padding asimétrico), flecha 15px */
+.ak-arrow {
+  display: inline-flex; align-items: center; justify-content: center; flex: none;
+  width: 48px; height: 48px; padding: 0;
+  border: 1px solid var(--ink); border-radius: var(--radius-round);
+  background: transparent; color: var(--ink); cursor: pointer; text-decoration: none;
+}
+.ak-arrow--dark { border-color: var(--umber-700); color: var(--surface); }
+
+/* Foco visible (añadido para teclado; no existe en el sitio) */
+.ak-btn:focus-visible, .ak-arrow:focus-visible, .ak-faq__q:focus-visible, .ak-nav__link:focus-visible {
+  outline: 2px solid var(--ink); outline-offset: 3px;
+}
+.ak-arrow--dark:focus-visible { outline-color: var(--surface); }
+
+/* SectionHeading — antetítulo a 20px del título */
+.ak-heading { display: grid; gap: 20px; justify-items: start; text-align: left; }
+.ak-heading--center { justify-items: center; text-align: center; }
+.ak-heading__eyebrow { margin: 0; font-family: var(--font-sans); font-size: 18px; line-height: 1.1; font-weight: 700; color: var(--accent); }
+.ak-heading__title { margin: 0; font-family: var(--font-display); font-weight: 700; color: var(--ink-heading); text-wrap: balance; }
+.ak-heading--xl .ak-heading__title { font-size: 72px; line-height: 1.1; }
+.ak-heading--lg .ak-heading__title { font-size: 48px; line-height: 1.1; }
+.ak-heading--md .ak-heading__title { font-size: 44px; line-height: 1.5; }
+.ak-heading--dark .ak-heading__title { color: var(--surface); }
+
+/* ServiceCard — foto 530×415, 25px a la categoría, 8px al título */
+.ak-card { display: grid; gap: 25px; margin: 0; }
+.ak-card__img { display: block; width: 100%; aspect-ratio: 530 / 415; object-fit: cover; border-radius: var(--radius-none); }
+.ak-card__row { display: flex; align-items: flex-end; justify-content: space-between; gap: 16px; }
+.ak-card__text { display: grid; gap: 8px; min-width: 0; }
+.ak-card__cat { margin: 0; font-family: var(--font-sans); font-size: 16px; line-height: 1.5; font-weight: 400; color: var(--accent); }
+.ak-card__title { margin: 0; font-family: var(--font-sans); font-size: 24px; line-height: 1; font-weight: 700; color: var(--ink); }
+
+/* Testimonial — padding 25px 12px 25px 22px, estrellas 13px, foto 55px */
+.ak-testi {
+  margin: 0; display: grid; gap: 16px;
+  background: var(--surface); box-shadow: var(--shadow-inset);
+  padding: var(--pad-card) 12px var(--pad-card) 22px;
+}
+.ak-testi__stars { display: flex; gap: 2px; color: var(--star); }
+.ak-testi__quote { margin: 0; font-family: var(--font-sans); font-size: 16px; line-height: 1.5; font-weight: 400; color: var(--ink); }
+.ak-testi__who { display: flex; align-items: center; gap: 12px; }
+.ak-testi__photo { width: 55px; height: 55px; flex: none; border-radius: var(--radius-circle); object-fit: cover; }
+.ak-testi__id { display: grid; gap: 4px; min-width: 0; }
+.ak-testi__name { font-family: var(--font-serif); font-size: 16px; line-height: 1.1; font-weight: 700; color: var(--ink); }
+.ak-testi__role { font-family: var(--font-sans); font-size: 14px; line-height: 1.5; font-weight: 400; color: var(--text); }
+.ak-testi__mark { margin-left: auto; padding-right: 18px; align-self: flex-end; font-family: var(--font-serif); font-size: 44px; line-height: 0.6; font-weight: 700; color: var(--peach); }
+
+/* FAQ — filas a 15px; pregunta 22px 30px; respuesta 10px 40px 15px 30px sobre mist */
+.ak-faq { display: grid; gap: 15px; }
+.ak-faq__item { background: var(--mist); }
+.ak-faq__item--open { box-shadow: var(--shadow-soft); }
+.ak-faq__q {
+  display: flex; align-items: center; justify-content: space-between; gap: 20px; width: 100%;
+  background: var(--surface); border: 1px solid transparent; box-shadow: var(--shadow-card);
+  padding: var(--pad-faq-y) var(--pad-faq-x); margin: 0; text-align: left; cursor: pointer;
+  font-family: var(--font-sans); font-size: 24px; line-height: 1.5; font-weight: 700; color: var(--ink);
+}
+.ak-faq__item--open .ak-faq__q { box-shadow: none; }
+.ak-faq__qtext { text-decoration: underline; }
+.ak-faq__a { padding: 10px 40px 15px 30px; font-family: var(--font-sans); font-size: 14px; line-height: 1.5; font-weight: 400; color: var(--text); }
+.ak-faq__a p { margin: 0; }
+
+/* NavBar — logotipo de 40px, enlaces con 25px por lado, CONTACTO outline */
+.ak-nav {
+  display: flex; align-items: center; justify-content: space-between; gap: 24px;
+  padding: 30px 16px; background: var(--surface); border-bottom: 1px solid var(--mist);
+}
+.ak-nav__menu { display: flex; list-style: none; margin: 0; padding: 0; }
+.ak-nav__link {
+  display: block; padding: 0 25px;
+  font-family: var(--font-sans); font-size: 14px; line-height: 21px; font-weight: 700; text-transform: uppercase;
+  color: var(--ink); text-decoration: none;
+}
+.ak-nav__link[aria-current="page"] { color: var(--accent); }
+
+/* Footer — fondo ink, logotipo de 72px, texto 14/21 stone */
+.ak-foot { background: var(--ink); color: var(--stone); padding: 50px 32px 20px; display: grid; gap: 40px; }
+.ak-foot__cols { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr) minmax(0, 1.3fr); gap: 40px; }
+.ak-foot__about { display: grid; gap: 28px; align-content: start; justify-items: start; }
+.ak-foot__about p, .ak-foot li { margin: 0; font-family: var(--font-sans); font-size: 14px; line-height: 21px; font-weight: 400; color: var(--stone); }
+.ak-foot ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 11px; align-content: start; }
+.ak-foot__menu li { text-transform: uppercase; }
+.ak-foot__menu li::before { content: "\203A\00a0"; color: var(--accent); }
+.ak-foot__title { margin: 0 0 20px; font-family: var(--font-display); font-size: 20px; line-height: 1; font-weight: 700; color: var(--surface); }
+.ak-foot__legal {
+  margin: 0; padding-top: 18px; border-top: 1px solid var(--umber-700); text-align: center;
+  font-family: var(--font-sans); font-size: 12px; line-height: 18px; color: var(--stone);
+}
+.ak-foot__legal b { color: var(--accent); font-weight: 700; }
+
+/* Logo */
+.ak-logo { display: block; max-width: 100%; }
