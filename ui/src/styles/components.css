@@ -101,6 +101,7 @@
 .ak-foot__cols { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr) minmax(0, 1.3fr); gap: 40px; }
 .ak-foot__about { display: grid; gap: 28px; align-content: start; justify-items: start; }
 .ak-foot__about p, .ak-foot li { margin: 0; font-family: var(--font-sans); font-size: 14px; line-height: 21px; font-weight: 400; color: var(--stone); }
+.ak-foot__contact li { overflow-wrap: anywhere; }
 .ak-foot ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 11px; align-content: start; }
 .ak-foot__menu li { text-transform: uppercase; }
 .ak-foot__menu li::before { content: "\203A\00a0"; color: var(--accent); }
@@ -112,4 +113,4 @@
 .ak-foot__legal b { color: var(--accent); font-weight: 700; }
 
 /* Logo */
-.ak-logo { display: block; max-width: 100%; }
+.ak-logo { display: block; max-width: 100%; object-fit: contain; object-position: left center; }

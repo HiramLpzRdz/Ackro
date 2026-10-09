@@ -29,8 +29,9 @@ const DEFAULT_ITEMS: NavBarItem[] = [
 ];
 
 /**
- * Barra superior de Ackro Habita: logotipo a la izquierda, menú en DM Sans 14px 700 MAYÚSCULAS y botón outline a la derecha.
- * Fondo blanco con línea inferior `mist`.
+ * Barra superior del sitio de Ackro Habita: logotipo a la izquierda, menú en DM Sans 14px 700 MAYÚSCULAS y botón outline a la derecha.
+ * Fondo blanco con línea inferior `mist`. Es de escritorio: necesita unos 1200px de ancho. En pantallas angostas el sitio usa un menú
+ * hamburguesa que este componente no incluye. Para la navegación del ERP diseña la propia con los tokens.
  */
 export function NavBar({ items = DEFAULT_ITEMS, cta = { label: 'Contacto' }, className }: NavBarProps) {
   return (

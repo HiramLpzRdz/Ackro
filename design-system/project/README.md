@@ -12,11 +12,12 @@ Ackro Habita es un despacho de arquitectura, construcción y remodelación resid
 ## Color
 
 - `ink` sobre `surface` es la combinación base. Los títulos grandes van en `ink-heading`.
-- El naranja es el único color de marca. `accent` para el botón primario, los antetítulos (`eyebrow`) y los subtítulos de tarjeta; `accent-deep` para el link activo del menú y el CTA del hero. No mezcles los dos en un mismo componente.
-- `brand-orange` y `pattern-orange` existen sólo para reproducir el logotipo y la cenefa; no los uses en interfaz.
-- Alterna secciones entre `surface` y `cream`. Las secciones oscuras usan `ink-heading` (Servicios) o `ink` (footer), con texto en `stone` y títulos en `surface`.
+- El naranja es el único color de marca, y en interfaz sólo se usa `accent` (#F94A24): antetítulos (`eyebrow`), subtítulos de tarjeta, enlace activo y acentos.
+- El botón primario usa `accent-strong` (#D83B18), que es `accent` oscurecido con el mismo tono; así el texto blanco pasa 4.5:1.
+- `accent-deep` (#EA5B1C) sólo aparece en el sitio web (enlace activo y CTA del hero); no se usa en producto. `brand-orange` y `pattern-orange` existen sólo para reproducir el logotipo y la cenefa.
+- En el sitio, las secciones alternan entre `surface` y `cream`. En el ERP el fondo de trabajo es siempre `surface`; `cream` es sólo para marketing. Las secciones oscuras usan `ink-heading` (Servicios) o `ink` (footer), con texto en `stone` y títulos en `surface`.
 - `star` es exclusivo de las estrellas de calificación.
-- Contraste: `accent` y `accent-deep` dan 3.5:1 sobre blanco. Úsalos como texto sólo a 18.66px bold o más (los antetítulos de 18px bold quedan justo debajo, así están en el sitio). El texto blanco de 14px sobre el botón naranja tampoco llega a 4.5:1; es la decisión de la fuente y se conserva.
+- Contraste: `accent` da 3.48:1 sobre blanco. Úsalo como texto sólo a 18.66px bold o más (los antetítulos de 18px bold quedan justo debajo, así están en el sitio). Nunca pongas texto blanco sobre `accent`: para eso existe `accent-strong`, que da 4.61:1.
 
 ## Tipografía
 
@@ -29,7 +30,7 @@ Ackro Habita es un despacho de arquitectura, construcción y remodelación resid
 
 ## Forma
 
-- Tarjetas, fotos, FAQ y testimonios tienen esquinas rectas (`radius-none`). Lo redondo se reserva para controles: botones en píldora (`radius-pill`, `radius-pill-sm`) y botones circulares de flecha (`radius-round`).
+- Tarjetas, fotos, FAQ y testimonios tienen esquinas rectas (`radius-none`). Lo redondo se reserva para controles: botones en píldora (`radius-pill`, `radius-pill-sm`) y botones circulares de flecha de 48px (`radius-round`).
 - Sombras muy suaves y difusas, sin desplazamiento: `shadow-card` en preguntas FAQ, `shadow-inset` en testimonios.
 - Bordes de 1px: `ink` en botones outline y flechas, `accent` en el CTA, `umber-700` sobre el footer oscuro.
 - Contenido a `container` (1140px) de ancho máximo.
@@ -51,12 +52,14 @@ Ackro Habita es un despacho de arquitectura, construcción y remodelación resid
 ## Iconografía
 
 - Íconos de servicio (`assets/Icons`): ilustraciones de línea en `accent` sobre fondo oscuro: escuadra y plano (Arquitectura), muro y cuchara (Construcción), casa con martillo (Remodelación). PNG de 64px.
-- En controles se usa una flecha simple (→) dentro del botón circular y a la derecha del texto de los botones. Las comillas de testimonio son un glifo de línea en `peach`.
+- En controles se usan las flechas sólidas de Font Awesome que trae el sitio: 12px a la derecha del texto de los botones, 15px dentro del botón circular y 24px en las preguntas frecuentes (hacia abajo cuando están abiertas). Las estrellas son de 13px en `star`. Las comillas de testimonio son un glifo en `peach`.
 - No hay un set de íconos de interfaz propio; para producto, elige un set de línea de trazo uniforme que acompañe esos dibujos y no lo mezcles con íconos rellenos.
 
 ## Aplicación en el ERP
 
-- Interfaz en DM Sans; Space Grotesk sólo para el título de cada pantalla.
-- `surface` como fondo de trabajo, `ink` para datos y `text` para etiquetas. `accent` sólo en la acción principal de cada pantalla.
-- Tablas y paneles con esquinas rectas; píldoras sólo para botones.
+- Los componentes React están en el paquete `@ackro/ui` (carpeta `ui/` del repo Ackro), verificados y listos para Claude Design.
+- La interfaz va en DM Sans; Space Grotesk sólo para el título de cada pantalla (`display-lg`).
+- El fondo de trabajo es `surface`. Los datos van en `ink` y las etiquetas en `text`. `accent` va sólo en acentos y en el enlace activo; la acción principal de cada pantalla es un botón primario en `accent-strong`.
+- Tablas y paneles con esquinas rectas; las píldoras sólo para botones. En las tablas: encabezados en `label` color `text`, filas separadas por 1px `mist` y números tabulares.
+- Prohibido: tarjetas KPI o cajitas de etiqueta + cifra, texto gris en datos, franjas de color en el borde, marcos dentro de marcos, pastel y colores nuevos.
 - Los logotipos están en `assets/Logos`: `Ackro_Logo` sobre fondo claro, `Ackro_Logo_NB` sobre fondo oscuro y `Ackro_Ico` como favicon o avatar.

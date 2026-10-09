@@ -1,8 +1,7 @@
 # Button
 Botón en píldora con texto en MAYÚSCULAS (`label`) y flecha opcional a la derecha.
 
-- **Primario** (`.ak-btn`): fondo `accent`, texto `surface`, borde 1px `accent`, `radius-pill`, padding 21px 41px. Uno por pantalla: «COTIZA CON NOSOTROS».
-- **Hero** (`.ak-btn--hero`): igual con fondo `accent-deep`; sólo en el hero.
-- **Outline** (`.ak-btn--outline`): fondo `surface`, texto y borde `ink`, `radius-pill-sm`, padding 16px 31px. Acciones secundarias («CONTACTO» del header).
+- **Primario** (`.ak-btn`): fondo y borde `accent-strong` (#D83B18), texto `surface`, `radius-pill`, padding 21px 41px. Uno por pantalla: «COTIZA CON NOSOTROS», «GUARDAR OBRA». Con `accent-strong` el texto blanco da 4.61:1.
+- **Outline** (`.ak-btn--outline`): fondo `surface`, texto y borde `ink`, `radius-pill-sm`, padding 16px 31px. Acciones secundarias («CONTACTO», «CANCELAR»).
 
-El consumidor da el texto (verbo imperativo) y decide si lleva flecha. Texto blanco de 14px sobre `accent` queda en 3.5:1, como en la fuente.
+La flecha es la de Font Awesome que usa el sitio, de 12px y a 8px del texto. El consumidor da el texto, que es un verbo en imperativo. El CTA naranja-hero del sitio (`accent-deep`) no se usa en producto.
